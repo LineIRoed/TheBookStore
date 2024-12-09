@@ -49,5 +49,5 @@ If you have any questions or suggestions, feel free to reach out to me at [anro0
 
 link to github repository: https://github.com/LineIRoed/TheBookStore.git
 
-link to netlify deployment:
+link to netlify deployment: https://6756fd4b483dda543bb1fa5b--rad-conkies-ff51ee.netlify.app/
 
