@@ -1,0 +1,72 @@
+/* fonts */
+@font-face {
+  font-family: baskervville;
+  src: url(../assets/fonts/baskerville\ regular.woff);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  background-color: #f8f8f8;
+}
+
+/* styles for logo */
+.navbar__logo-link {
+  display: block;
+}
+.navbar__logo-image {
+  height: auto;
+}
+
+/* styles for links */
+.navbar__links {
+  flex-grow: 1;
+}
+.navbar__links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 100%;
+}
+.navbar__link {
+  text-decoration: none;
+  color: var(--navbar-link-color);
+  font-family: "Baskervville";
+  font-size: 1.25rem;
+}
+.navbar__item > *:hover {
+  color: var(--navbar-hover-color);
+  border-bottom-color: var(--navbar-hover-color);
+  transition: border-bottom-color 0.3s linear, color 0.3s linear;
+}
+.navbar__link--active {
+  border-bottom: 1.5px solid var(--navbar-link-color);
+}
+
+/* styles for the menu */
+.navbar__menu {
+  display: none;
+}
+.navbar__toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.navbar__hamburger-icon:hover {
+  color: var(--navbar-hover-color);
+  transition: color 0.3s linear;
+}
+
+/* tablet view */
+@media screen and (max-width: 768px) {
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+  }
+  .navbar__item {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+:root{
+    --navbar-background-color: #F8F8F8;
+    --navbar-hover-color: #A3453F;
+    --navbar-link-color: #140C0B;
+    --main-background-color: #D1E2E0;
+    --secondary-background-color: #c9dddb;
+    --primary-font-color: #140C0B;
+    --secondary-font-color: #CD746E;
+    --button-color: #CD746E;
+    --button-color-active: #A3453F;
+}

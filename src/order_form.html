@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBookStore/Order</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/order_form.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- navbar logo -->
+        <div class="navbar__logo">
+            <a href="./index.html" class="navbar__logo-link">
+                <img 
+                    src="./assets/icons/logo.svg" 
+                    alt="bookstore logo" 
+                    class="navbar__logo-image"
+                    width="70px">
+            </a>
+        </div>
+
+        <!-- navnar links -->
+        <div class="navbar__links">
+            <ul class="navbar__links-list">
+                <li class="navbar__item">
+                    <a href="./index.html" class="navbar__link navbar__link">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Categories</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">News</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Special offers</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- navbar menu -->
+        <div class="navbar__menu">
+            <button class="navbar__toggle">
+                <!-- <img src="" alt="hamburger menu logo"> -->
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="navbar__hamburger-icon">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <main>
+        <div class="order__grid">
+            <a href="./index.html" class="back__button">Back To Products</a>
+            <h1 class="order__header"><b>Order Form</b></h1>
+            <section class="contact__section-1">
+                <form class="contact__form">
+                    <p class="form__contact-header"><b>Contact</b></p>
+                    <div class="contact__form-group">
+                        <label for="name" class="contact__form-label">Name</label>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            id="name"
+                            class="contact__form-input"
+                            required
+                            maxlength="50"
+                            placeholder="e.g. John Smith"
+                        />
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="email" class="contact__form-label">Email</label>
+                        <input 
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="contact__form-input"
+                            required
+                            placeholder="e.g. john.smith@gmail.com"
+                        />
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="address" class="contact__form-label">Address</label>
+                        <input 
+                            type="text"
+                            name="address"
+                            id="address"
+                            class="contact__form-input"
+                            required
+                            maxlength="50"
+                            placeholder="e.g. Road 123"
+                        />
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="post_code" class="contact__form-label">Post Code</label>
+                        <input 
+                            type="text"
+                            name="post_code"
+                            id="post_code"
+                            class="contact__form-input"
+                            required
+                            maxlength="4"
+                            placeholder="e.g. 1010"
+                        />
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="city" class="contact__form-label">City</label>
+                        <input 
+                            type="text"
+                            name="city"
+                            id="city"
+                            class="contact__form-input"
+                            required
+                            maxlength="20"
+                            placeholder="e.g. Oslo"
+                        />
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="country" class="contact__form-label">Country</label>
+                        <input 
+                            type="text"
+                            name="country"
+                            id="country"
+                            class="contact__form-input"
+                            required
+                            maxlength="20"
+                            placeholder="e.g. Norway"
+                        />
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="phone_number" class="contact__form-label">Phone Number</label>
+                        <input 
+                            type="text"
+                            name="phone_number"
+                            id="phone_number"
+                            class="contact__form-input"
+                            required
+                            maxlength="12"
+                            placeholder="e.g. 0047 12345678"
+                        />
+                    </div>
+                </form>
+            </section>
+            <section class="contact__section-2">
+                <form class="contact__form">
+                    <p class="form__payment-header"><b>Payment Information</b></p>
+                    <div class="contact__form-group">
+                        <label for="name_owner" class="contact__form-label">Name of Owner</label>
+                        <input 
+                            type="text"
+                            name="name_owner"
+                            id="name_owner"
+                            class="contact__form-input"
+                            required
+                            maxlength="50"
+                            placeholder="e.g. John Smith"
+                        />
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="card_number" class="contact__form-label">Card Number</label>
+                        <input 
+                            type="text"
+                            name="card_number"
+                            id="card_number"
+                            class="contact__form-input"
+                            required
+                            maxlength="16"
+                            placeholder="e.g. 0000 0000 0000 0000"
+                        />
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="exp_date" class="contact__form-label">Exp Date</label>
+                        <input 
+                            type="date"
+                            name="exp_date"
+                            id="exp_date"
+                            class="contact__form-input"
+                            required
+                        />
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="cvc_code" class="contact__form-label">CVC Code</label>
+                        <input 
+                            type="text"
+                            name="cvc_code"
+                            id="cvc_code"
+                            class="contact__form-input"
+                            maxlength="3"
+                            placeholder="e.g. 123"
+                        />
+                    </div>
+                </form>
+            </section>
+            <section class="contact__section-3">
+                <form class="contact__form">
+                    <p class="form__other-header"><b>Other Information</b></p>
+                    <div class="contact__form-group">
+                        <label for="copies" class="contact__form-label">Number of Copies</label>
+                        <input 
+                            type="number"
+                            name="copies"
+                            id="copies"
+                            class="contact__form-input"
+                            max="10"
+                            min="1"
+                            placeholder="1"
+                        />
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="special_requests" class="contact__form-label-radio">Is this a present?</label>
+                        <br>
+                        <label for="radio" class="contact__form-label-radio">Yes</label>
+                        <input 
+                            type="radio" 
+                            name="special_requests"
+                            id="special_requests"
+                            class="contact__form-input-radio"
+                        />
+                        <br>
+                        <label for="radio" class="contact__form-label-radio">No</label>
+                        <input 
+                            type="radio" 
+                            name="special_requests"
+                            id="special_requests"
+                            class="contact__form-input-radio"
+                        />
+                    </div>
+                </form>
+            </section>
+            <a href="#" class="order__button">Place Order</a>
+        </div>
+    </main>
+    <footer>
+        <div class="container__footer">
+            <div class="footer__about">
+                <ul>
+                    <li class="footer__list-item-header"><b>TheBookStore</b></li>
+                    <li class="footer__list-item">About Us</li>
+                </ul>
+            </div>
+            <div class="footer__account">
+                <ul>
+                    <li class="footer__list-item-header"><b>My Account</b></li>
+                    <li class="footer__list-item">Orders</li>
+                    <li class="footer__list-item">Wishlist</li>
+                    <li class="footer__list-item">My Library</li>
+                </ul>
+            </div>
+            <div class="footer__customer-service">
+                <ul>
+                    <li class="footer__list-item-header"><b>Customer Service</b></li>
+                    <li class="footer__list-item">Contact</li>
+                    <li class="footer__list-item">Privacy Policy</li>
+                    <li class="footer__list-item">Cookie Policy</li>
+                    <li class="footer__list-item">Adjust Cookies</li>
+                </ul>
+            </div>
+            <div class="footer__contacts-container">
+                <div>
+                                <svg fill="#000000" 
+                      width="60px" 
+                      height="auto" 
+                      viewBox="0 0 24 24" 
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="footer__contacts-facebook">
+                      <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"/>
+                  </svg>
+                  <svg 
+                      width="60px" 
+                      height="auto" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="footer__contacts-instagram">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#0F0F0F"/>
+                      <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#0F0F0F"/>
+                  </svg>
+                </div>
+    
+              </div>
+            <a href="#" class="footer__copyright">TheBookStore Copyright © 2024-2025</a>
+        </div>
+    </footer>
+</body>
+</html>
