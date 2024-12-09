@@ -49,5 +49,5 @@ If you have any questions or suggestions, feel free to reach out to me at [anro0
 
 link to github repository: https://github.com/LineIRoed/TheBookStore.git
 
-link to netlify deployment: https://6756fea1e257913b47b16276--famous-sunshine-f463c6.netlify.app/
+link to netlify deployment: https://675701fe070399000816b0aa--famous-sunshine-f463c6.netlify.app/
 
