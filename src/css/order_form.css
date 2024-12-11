@@ -201,6 +201,32 @@ body {
     }
     .form__other-header {
         font-size: 1.25rem;
+    } 
+}
+
+@media screen and (max-width: 320px) {
+    .order__grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    
+    .back__button {
+        display: flex;
+    }
+    .order__header {
+       display: flex;
+    }
+    .contact__section-1 {
+        display: flex;
+    }
+    .contact__section-2 {
+        display: flex;
+    }
+    .contact__section-3 {
+        display: flex;
+    }
+    .order__button {
+        display: flex;
+    }
 }
