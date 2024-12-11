@@ -205,3 +205,13 @@ main {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .cover__front {
+        width: 100%;
+    }
+    .cover__back {
+        width: 100%;
+    }
+    
+}
