@@ -206,7 +206,7 @@ main {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .cover__front {
         width: 100%;
     }
